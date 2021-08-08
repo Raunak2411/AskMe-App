@@ -3,7 +3,7 @@ This is a social media app, where user can post their question, answer others qu
 
 # Screenshots
 
-<table cellpadding = "5px"><tr><td>
+<table cellpadding = "500px"><tr><td>
   <img src = "Screenshots/login.jpg" width = 300>
   </td>
   <td>
