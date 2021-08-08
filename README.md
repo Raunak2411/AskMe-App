@@ -7,9 +7,16 @@ This is a social media app, where user can post their question, answer others qu
   </td>
   <td>
   <img src = "Screenshots/signup.jpg" width = 300>
-</td></tr></table>
+</td></tr>
 
+<tr><td>
+  <img src = "Screenshots/home.jpg" width = 300>
+  </td>
+  <td>
+  <img src = "Screenshots/sidebar.jpg" width = 300>
+</td></tr>
+<tr><td>  
+  <img src = "Screenshots/postques.jpg" width = 300>
+</td></tr>
+</table>
 
-<img src = "Screenshots/home.jpg" width = 300>            <img src = "Screenshots/sidebar.jpg" width = 300>
-
-<img src = "Screenshots/postques.jpg" width = 300>
