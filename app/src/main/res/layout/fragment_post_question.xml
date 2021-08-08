@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    tools:context=".ui.PostQuestionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView_askques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Ask a Question"
+            android:textColor="@color/purple_500"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/question_container"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="#F2F2F2"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColorHint="#0d6e6a"
+            app:boxStrokeColor="#0D6E6A"
+            app:layout_constraintTop_toBottomOf="@+id/textView_askques">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/question_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#595959"
+                android:hint="Question" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/question_image"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_baseline_add_photo_alternate_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question_container" />
+
+<!--        <Button-->
+<!--            android:id="@+id/add_image"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:text="Add Image"-->
+<!--            android:textSize="18dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/question_image" />-->
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:text="DISCARD"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/submit_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question_image" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="POST"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/delete_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/delete_button"
+            app:layout_constraintTop_toTopOf="@+id/delete_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

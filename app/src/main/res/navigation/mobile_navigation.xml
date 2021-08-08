@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.askme.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_comments"
+            app:destination="@id/nav_comments" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_post_question"
+        android:name="com.example.askme.ui.PostQuestionFragment"
+        android:label="fragment_post_question"
+        tools:layout="@layout/fragment_post_question" />
+    <fragment
+        android:id="@+id/nav_comments"
+        android:name="com.example.askme.ui.CommentFragment"
+        android:label="fragment_comment"
+        tools:layout="@layout/fragment_comment" >
+        <argument
+            android:name="post_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_savedPost"
+        android:name="com.example.askme.ui.SavedPostFragment"
+        android:label="fragment_saved_post"
+        tools:layout="@layout/fragment_saved_post" >
+        <action
+            android:id="@+id/action_nav_savedPost_to_nav_comments"
+            app:destination="@id/nav_comments" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_myPost"
+        android:name="com.example.askme.ui.MyPostsFragment"
+        android:label="fragment_my_posts"
+        tools:layout="@layout/fragment_my_posts" >
+        <action
+            android:id="@+id/action_myPostsFragment_to_nav_comments"
+            app:destination="@id/nav_comments" />
+    </fragment>
+</navigation>

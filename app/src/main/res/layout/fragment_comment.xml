@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CommentFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/post_comment"
+            tools:listitem="@layout/comment_item" />
+
+        <RelativeLayout
+            android:id="@+id/post_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:padding="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Comment_profile_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_blankprofile" />
+
+            <EditText
+                android:id="@+id/new_comment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Write your comment"
+                android:maxLength="200"
+                android:padding="10dp"
+                android:layout_toRightOf="@id/Comment_profile_image"
+                android:layout_toLeftOf="@id/Post_comment_button"/>
+
+            <Button
+                android:id="@+id/Post_comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/button"
+                android:textColor="#FFF"
+                android:text="POST"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
