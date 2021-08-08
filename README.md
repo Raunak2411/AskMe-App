@@ -4,6 +4,8 @@ This is a social media app, where user can post their question, answer others qu
 # Screenshots
 <table><tr><td>
   <img src = "Screenshots/login.jpg" width = 300>
+  </td>
+  <td>
   <img src = "Screenshots/signup.jpg" width = 300>
 </td></tr></table>
 
