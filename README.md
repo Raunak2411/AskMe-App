@@ -3,7 +3,7 @@ This is a social media app, where user can post their question, answer others qu
 
 # Screenshots
 
-<img src = "Screenshots/login.jpg" width = 300>            <img src = "Screenshots/signup.jpg" width = 300>
+<img src = "Screenshots/login.jpg" width = 300>     \t       <img src = "Screenshots/signup.jpg" width = 300>
 
 <img src = "Screenshots/home.jpg" width = 300>            <img src = "Screenshots/sidebar.jpg" width = 300>
 
