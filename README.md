@@ -3,7 +3,7 @@ This is a social media app, where user can post their question, answer others qu
 
 # Screenshots
 
-<table><tr><td>
+<table border = "10px"><tr><td>
   <img src = "Screenshots/home.jpg" width = 300>
   </td>
   <td>
