@@ -2,15 +2,7 @@
 This is a social media app, where user can post their question, answer others question, like, dislike and save the posts.
 
 # Screenshots
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 15px;
-}
-</style>
+
 <table><tr><td>
   <img src = "Screenshots/login.jpg" width = 300>
   </td>
