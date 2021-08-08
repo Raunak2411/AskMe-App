@@ -3,10 +3,9 @@ This is a social media app, where user can post their question, answer others qu
 
 # Screenshots
 
-<table cellpadding = "100px"><tr><td>
+<table><tr><td>
   <img src = "Screenshots/home.jpg" width = 300>
-  </td>
-  <td>
+
   <img src = "Screenshots/sidebar.jpg" width = 300>
 </td></tr>
 
