@@ -1,5 +1,13 @@
 # AskMe-App
-This is a social media app, where user can post their question, answer others question, like, dislike and save the posts.
+This is a social media app, where users can post their question, answer others question, like, dislike and save the posts.
+
+# To run the app
+
+-> Copy AskMe.apk file to your android device and Install the app.
+
+OR
+
+-> Run through android studio by importing the project.
 
 # Screenshots
 
